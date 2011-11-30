@@ -1,4 +1,0 @@
-class Result < ActiveRecord::Base
-  belongs_to :case
-  belongs_to :round
-end
