@@ -1,0 +1,8 @@
+<h2>Test round on theme <%= @theme.name %></h2>
+<%= form_tag(@round_path, :method => :put) do %>
+<ul class="case-list">
+<%= render :partial => 'results/result', :collection => @round.results %>
+</ul>
+<%= submit_tag "Save" %>
+<% end %>
+<%= link_to "Back to theme", theme_path(@theme) %> | <%= link_to "Back to history", theme_rounds_path(@theme) %>

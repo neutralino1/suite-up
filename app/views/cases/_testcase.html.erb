@@ -1,0 +1,10 @@
+<li class="<%= (testcase_counter%2 == 0) ? 'even' : 'odd' %>">
+  <div class="fleft action"><%= testcase.action %></div>
+  <div class="fleft expected"><%= testcase.expected %></div>
+  <div class="fleft align-right">
+    <%= link_to "Edit", edit_case_path(testcase) %>
+    <%= button_to "Delete", {:action=>"destroy", :controller=>"cases", :id => testcase.id},
+    :confirm => "Are you sure?", :method => :delete %>
+  </div>
+  <div class="fclear"></div>
+</li>

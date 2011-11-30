@@ -1,0 +1,14 @@
+<li class="<%= (result_counter%2 == 0) ? 'even' : 'odd' %> <%= result.fail? ? 'fail' : '' %> <%= result.pass? ? 'pass' : ''%>">
+  <div class="action"><%= result.case.action %></div>
+<div class="fleft expected">
+  <%= result.case.expected %>
+</div>
+<div class="fleft observed">
+<%= text_area_tag 'observed[]', result.observed, :placeholder => 'Observed...' %>
+</div>
+<div class="fleft status">
+<%= select_tag 'status[]', options_for_select(result_options, result.status) %>
+<%= hidden_field_tag 'result_id[]', result.id %>
+</div>
+<div class="fclear"></div>
+</li>

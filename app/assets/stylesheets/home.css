@@ -1,0 +1,163 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+html, body {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color:#EFEFE9;
+    font: 16px/24px Helvetica,Arial,sans-serif;
+
+}
+
+header span#logo {
+//    color:#003A70;
+    color:#0c88cf;
+    font-size:30px;
+    font-weight:bold;
+}
+
+header span#logo a {
+    text-decoration:none;
+    color:#0c88cf;
+}
+
+p#tagline {
+    text-align:right;
+    color:#313233;
+}
+
+header {
+    background-color:#121314;
+    padding:10px 0 3px 0;
+    text-align:right;
+}
+
+div.body {
+    width:960px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+ul.theme-list {
+    list-style-type:none;
+    padding-left:0px;
+    cursor:pointer;
+}
+
+ul.theme-list h3 {
+    margin-bottom:0px;
+}
+
+ul.theme-list li, ul.case-list li{
+    padding:0 5px 0 5px;
+}
+
+.even{
+    background-color:rgba(0,0,0,.05);
+}
+
+.pass.even {
+    background-color:rgba(0,255,0,.05);
+}
+
+.pass.odd {
+    background-color:rgba(0,255,0,.1);
+}
+
+.pass {
+    background-color:rgba(0,255,0,.1);
+}
+
+.fail {
+    background-color:rgba(255,0,0,.1);
+}
+
+.ongoing {
+    background-color:rgba(255,255,0,.1);
+}
+
+.pass-text {
+    color:#005500;
+}
+
+.fail-text {
+    color:#550000;
+}
+
+.ongoing-text {
+    color:#AAAA00;
+}
+
+.fail.even {
+    background-color:rgba(255,0,0,.05);
+}
+
+.fail.odd {
+    background-color:rgba(255,0,0,.1);
+}
+
+div.theme-description {
+    color:#515253;
+}
+
+ul.case-list {
+    list-style-type:none;
+    padding-left:0px;
+}
+
+ul.round-list {
+    list-style-type:none;
+    padding-left:0px;
+}
+
+ul.round-list li {
+    padding:10px;
+}
+
+ul.case-list li div.action{
+    width:44%;
+    font-weight:bold;
+}
+
+ul.case-list li div.expected{
+    width:50%;
+}
+
+ul.case-list li div.observed{
+    width:40%;
+}
+
+ul.case-list li div.status{
+    width:10%;
+}
+
+div.observed textarea { 
+    width:100%; 
+}
+
+.round-status {
+    font-weight:bold;
+    width:100px;
+    text-transform:uppercase;
+}
+
+.fleft {
+    float:left;
+}
+
+.fright {
+    float:right;
+}
+
+.fclear {
+    clear:both;
+}
+
+.align-right {
+    text-align:right;
+}

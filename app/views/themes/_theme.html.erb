@@ -1,0 +1,16 @@
+<li onclick="location.href='<%= theme_path(theme)%>';" class="<%= (theme_counter%2 == 0) ? 'even' : 'odd' %>">
+<h3><%= theme.name %></h3>
+<div class="fleft theme-description"><%= theme.description %></div>
+<div class="fright">
+<%= link_to "Edit", edit_theme_path(theme) %>
+<%= button_to "Delete", {:action=>"destroy", :controller=>"themes", :id => theme.id},
+          :confirm => "Are you sure?", :method => :delete %>
+</div>
+<div class="fclear"></div>
+<%= theme.cases.size %> test cases | 
+<% last_round = theme.last_round %>
+<% if last_round %>
+ | Last round was started on <%= theme.last_round.created_at %> and is <span class="round-status <%= theme.last_round.status %>-text"><%= theme.last_round.status %></span>.
+<% else %>
+No round has been started.
+<% end %>

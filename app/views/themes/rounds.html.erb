@@ -1,0 +1,6 @@
+<h2>Round history for theme <%= @theme.name %></h2>
+<%= link_to "Start round", theme_start_round_path(@theme) %>
+<ul class="round-list">
+<%= render :partial => 'rounds/round', :collection => @rounds %>
+</ul>
+<%= link_to "Back to theme", theme_path(@theme) %>

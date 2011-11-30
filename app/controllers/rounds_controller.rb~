@@ -1,0 +1,10 @@
+class RoundsController < ApplicationController
+  def show
+    @round = Round.find(params[:id])
+    @theme = @round.theme
+  end
+
+  def update
+    raise params.inspect
+  end
+end

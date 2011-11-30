@@ -1,0 +1,3 @@
+<li class="<%= (round_counter%2 == 0) ? 'even' : 'odd' %> <%= round.fail? ? 'fail' : '' %> <%= round.pass? ? 'pass' : ''%>">
+Started on <%= round.created_at %>. <%= link_to "View round", round_path(round) %>.
+</li>

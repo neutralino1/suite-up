@@ -1,0 +1,6 @@
+<p id="tagline">Welcome to Suite Up!</p>
+<h2>Test themes (<%= @themes.size %>)</h2>
+<ul class="theme-list">
+<%= render :partial => 'themes/theme', :collection => @themes %>
+</ul>
+<%= link_to "Add test theme", new_theme_path %>

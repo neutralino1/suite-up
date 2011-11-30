@@ -1,0 +1,8 @@
+<li>
+  <div class="fleft action"><%= testcase.action %></div>
+  <div class="fright expected"><%= testcase.expected %></div>
+  <div class="fclear align-right">
+    <%= button_to "Delete", {:action=>"destroy", :controller=>"cases", :id => testcase.id, :theme_id => testcase.theme.id},
+    :confirm => "Are you sure?", :method => :delete %>
+  </div>
+</li>

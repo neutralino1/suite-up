@@ -1,0 +1,10 @@
+class CreateResults < ActiveRecord::Migration
+  def change
+    create_table :results do |t|
+      t.references :case
+
+      t.timestamps
+    end
+    add_index :results, :case_id
+  end
+end

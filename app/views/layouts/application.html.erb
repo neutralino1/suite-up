@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SUITE UP!</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+<div class="body">
+<span id="logo"><%= link_to "SUITE UP!", root_path %></span>
+<div>
+</header>
+<div class="body">
+<%= yield %>
+</div>
+</body>
+</html>
